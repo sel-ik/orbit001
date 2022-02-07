@@ -6,7 +6,8 @@
   - first name
   - surname
   - department
-  - job profiler- team
+  - job role
+  - team
 
 2. View/Show all team members
 

@@ -84,6 +84,7 @@ GEM
     digest (3.1.0)
     erubi (1.10.0)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw32)
     formatador (1.1.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -119,6 +120,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.7.1)
     minitest (5.15.0)
     minitest-reporters (1.5.0)
       ansi
@@ -127,6 +129,14 @@ GEM
       ruby-progressbar
     msgpack (1.4.4)
     nenv (0.3.0)
+    net-imap (0.2.3)
+      digest
+      net-protocol
+      strscan
+    net-pop (0.1.1)
+      digest
+      net-protocol
+      timeout
     net-protocol (0.1.2)
       io-wait
       timeout
@@ -135,7 +145,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.1-x86_64-linux)
+    nokogiri (1.13.1)
+      mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
     notiffany (0.1.3)
       nenv (~> 0.1)
@@ -197,6 +208,8 @@ GEM
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -221,6 +234,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    strscan (3.0.1)
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.2.0)
@@ -229,6 +243,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2021.5)
+      tzinfo (>= 1.0.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -264,6 +280,8 @@ DEPENDENCIES
   listen
   minitest
   minitest-reporters
+  net-imap
+  net-pop
   net-smtp
   pg (>= 1.1.4)
   puma (~> 5.0)

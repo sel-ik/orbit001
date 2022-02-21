@@ -11,6 +11,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'net-smtp', require: false
+gem 'net-pop', require: false
+gem 'net-imap', require: false
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'

@@ -1,4 +1,11 @@
 <% provide(:title, 'Home') %>
 
-<h1>Orbit#home</h1>
-<p>Find me in app/views/html_pages/home.html.erb</p>
+<div class="center jumbotron">
+  <h1>Welcome to Orbit</h1>
+  <h2>
+    This is the homepage of the Orbit application. You can find the codebase for this application on
+    <a href="https://github.com/sel-ik/orbit001">Github</a>
+  </h2>
+
+  <%= link_to "Create Account", signup_path, class: "btn btn-lg btn-primary" %>
+</div>

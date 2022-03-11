@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @snapshots = @user.snapshots.paginate(page: params[:page])
   end
 
   def create
@@ -45,14 +46,6 @@ class UsersController < ApplicationController
   end
 
   private
-
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Please log in."
-        redirect_to login_url
-      end
-    end
 
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
